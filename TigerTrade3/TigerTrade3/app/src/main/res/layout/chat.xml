@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/sentMessage"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/inputLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="520dp"
+        android:background="@drawable/chat"
+        android:text="\n       Hey,I want to trade"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Input layout for message typing and sending -->
+    <TextView
+        android:id="@+id/sentMessage2"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/inputLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="441dp"
+        android:background="@drawable/chat"
+        android:text="\n              ...Typing"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- TextView for displaying a sent message -->
+
+        <!-- EditText for entering new messages -->
+
+        <EditText
+            android:id="@+id/newMessage"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Type a message"/>
+
+        <!-- Button for sending messages -->
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:textColor="@color/white"
+            android:background="@color/black"/>
+    </LinearLayout>
+
+</RelativeLayout>
